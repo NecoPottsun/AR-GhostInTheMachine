@@ -9,9 +9,18 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, life);
     }
     void OnCollisionEnter(Collision collision)
-    {
+    {   
+        Debug.Log("OnCollisionEnter() called");
+        Debug.Log(collision.gameObject.tag);
+        Debug.Log(collision.gameObject.name);
         Destroy(collision.gameObject);
         Destroy(gameObject);
+    }
+    void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("OnCollisionStay() called");
+        Debug.Log(collision.gameObject.name);
+
     }
 }
 

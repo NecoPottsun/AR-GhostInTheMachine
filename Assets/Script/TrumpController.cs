@@ -9,6 +9,7 @@ public class TrumpController : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
+    public float speed = 4f;
     public DefaultObserverEventHandler imageTargetHandler;
     private Rigidbody rb;
     private Animation anim;
@@ -28,11 +29,9 @@ public class TrumpController : MonoBehaviour
         float y = CrossPlatformInputManager.GetAxis("Vertical");
         bool isShoot = CrossPlatformInputManager.GetButton("Shoot");
         Vector3 movement = new Vector3(x,0, y);
-        rb.velocity = movement * 4f;
-    
+        rb.velocity = movement * speed;
         /*Shoot if the ImageTarget is detected*/
         if(isShoot && imageTargetHandler.GetMObserverBehaviour().TargetStatus.Status == Status.TRACKED){
-            Debug.Log("Trump Existed, can shoot");
    //         Debug.Log(imageTargetHandler.GetMObserverBehaviour().TargetStatus.Status);
             Shoot();
         }
