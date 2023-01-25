@@ -31,7 +31,7 @@ public class TrumpController : MonoBehaviour
         Vector3 movement = new Vector3(x,0, y);
         rb.velocity = movement * speed;
         /*Shoot if the ImageTarget is detected*/
-        if(isShoot && imageTargetHandler.GetMObserverBehaviour().TargetStatus.Status == Status.TRACKED){
+        if(isShoot && imageTargetHandler.getMObserverBehaviour().TargetStatus.Status == Status.TRACKED){
    //         Debug.Log(imageTargetHandler.GetMObserverBehaviour().TargetStatus.Status);
             Shoot();
         }
