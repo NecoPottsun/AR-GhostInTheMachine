@@ -3867,6 +3867,13 @@ IL_0064:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* DefaultObserverEventHandler_GetMObserverBehaviour_mD773C97CA7C51245D223100F320F20C2FEFDD9D3 (DefaultObserverEventHandler_t7CF27A0CC5B1FAEDDB5964C3A11F29C2A14E1FC0* __this, const RuntimeMethod* method) 
+{
+	{
+		ObserverBehaviour_t5523404662BA53BE6118C49F6FFA9E19719115DB* L_0 = __this->___mObserverBehaviour_10;
+		return L_0;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultObserverEventHandler_OnDestroy_mB8DB7A962B7CBF528077A37B13AC953A818A1A1C (DefaultObserverEventHandler_t7CF27A0CC5B1FAEDDB5964C3A11F29C2A14E1FC0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

@@ -37,6 +37,7 @@ extern void DefaultInitializationErrorHandler_SetupGUIStyles_m764943DECA9576F863
 extern void DefaultInitializationErrorHandler_CreateSinglePixelTexture_m9291B1D3DEB05094A03D1AE5C9A6782B740CF76B (void);
 extern void DefaultInitializationErrorHandler__ctor_m6067329B55144B60105E65EE6C22061CCCEAA752 (void);
 extern void DefaultObserverEventHandler_Start_m4C0CD606664A8117685DE4476243FBC271F39A20 (void);
+extern void DefaultObserverEventHandler_GetMObserverBehaviour_mD773C97CA7C51245D223100F320F20C2FEFDD9D3 (void);
 extern void DefaultObserverEventHandler_OnDestroy_mB8DB7A962B7CBF528077A37B13AC953A818A1A1C (void);
 extern void DefaultObserverEventHandler_OnObserverDestroyed_mDE68FFC02B9F473767AF430F805CFA3344CDA069 (void);
 extern void DefaultObserverEventHandler_OnObserverStatusChanged_mD8AD03B09A4086213FA8C13DEBC1365CA405C991 (void);
@@ -122,7 +123,7 @@ extern void UnityXRBridge_IsOpenXREnabled_mBC46E7F7ABDF1AFEF80431C6A794F79FE1B15
 extern void UnityXRBridge_GetHoloLensSpatialCoordinateSystemPtr_m776598D0904CEFAB865F3D4C8359B41C02D39952 (void);
 extern void UnityXRBridge_IsHolographicDevice_m3848516CDF39BB9B73D88DD3D8C9540D14B46E93 (void);
 extern void UnityXRBridge_SetFocusPointForFrame_mF1E0A9E913A1769A5B6712CC147502A6D01E9CA8 (void);
-static Il2CppMethodPointer s_methodPointers[110] = 
+static Il2CppMethodPointer s_methodPointers[111] = 
 {
 	BarcodeOutlineBehaviour_Start_m86E1471F3B6684C34C2B494D42F0F14EC2B8F487,
 	BarcodeOutlineBehaviour_OnBarcodeOutlineChanged_m0F33590D9F7B5AEA6DF8A84EE01FE3AD9A787525,
@@ -149,6 +150,7 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	DefaultInitializationErrorHandler_CreateSinglePixelTexture_m9291B1D3DEB05094A03D1AE5C9A6782B740CF76B,
 	DefaultInitializationErrorHandler__ctor_m6067329B55144B60105E65EE6C22061CCCEAA752,
 	DefaultObserverEventHandler_Start_m4C0CD606664A8117685DE4476243FBC271F39A20,
+	DefaultObserverEventHandler_GetMObserverBehaviour_mD773C97CA7C51245D223100F320F20C2FEFDD9D3,
 	DefaultObserverEventHandler_OnDestroy_mB8DB7A962B7CBF528077A37B13AC953A818A1A1C,
 	DefaultObserverEventHandler_OnObserverDestroyed_mDE68FFC02B9F473767AF430F805CFA3344CDA069,
 	DefaultObserverEventHandler_OnObserverStatusChanged_mD8AD03B09A4086213FA8C13DEBC1365CA405C991,
@@ -235,7 +237,7 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	UnityXRBridge_IsHolographicDevice_m3848516CDF39BB9B73D88DD3D8C9540D14B46E93,
 	UnityXRBridge_SetFocusPointForFrame_mF1E0A9E913A1769A5B6712CC147502A6D01E9CA8,
 };
-static const int32_t s_InvokerIndices[110] = 
+static const int32_t s_InvokerIndices[111] = 
 {
 	5928,
 	4689,
@@ -262,6 +264,7 @@ static const int32_t s_InvokerIndices[110] =
 	4162,
 	5928,
 	5928,
+	5826,
 	5928,
 	4689,
 	2599,
@@ -352,7 +355,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_VuforiaScripts_CodeGenModule;
 const Il2CppCodeGenModule g_VuforiaScripts_CodeGenModule = 
 {
 	"VuforiaScripts.dll",
-	110,
+	111,
 	s_methodPointers,
 	0,
 	NULL,

@@ -13,8 +13,15 @@ public class Bullet : MonoBehaviour
         Debug.Log("OnCollisionEnter() called");
         Debug.Log(collision.gameObject.tag);
         Debug.Log(collision.gameObject.name);
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        if(collision.gameObject.tag == "Enemy"){
+            Destroy(collision.gameObject);
+            if(collision.gameObject.tag == "Ghost"){
+                
+            }
+            
+        }
+        Destroy(gameObject);    
+
     }
     void OnCollisionStay(Collision collision)
     {
